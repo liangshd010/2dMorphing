@@ -7,6 +7,9 @@
 /*            Create color SGI format image file                                                                */
 /******************************************************************/
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 using namespace std;
 
@@ -56,7 +59,7 @@ static long getlong(FILE *inf)
 	return (buf[0]<<24) + (buf[1]<<16)+ (buf[2]<<8) + (buf[3]<<0); 
 }
 
-void main(int argc, char **argv) 
+int main(int argc, char **argv) 
 { 
 	FILE *of, *inf; 
 	char iname[80]; 
@@ -178,4 +181,5 @@ void main(int argc, char **argv)
 	}
 
 	fclose(of); 
+    return 0;
 }

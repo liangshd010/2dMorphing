@@ -18,7 +18,7 @@ using namespace std;
  * 
  * Main function to collect user parameters and pass them to morph(). 
  */ 
-void main(int argc, char **argv) 
+int main(int argc, char **argv) 
 { 
   int nframes;		// number of frames
   string name;		// basename
@@ -39,6 +39,7 @@ void main(int argc, char **argv)
   M2 = readImage(argv[4], MESH);	// target mesh 
   
   morph(I1, I2, M1, M2, nframes, name.c_str()); 
+  return 0;
 } 
   
 void morph(const imageP I1, const imageP I2, const imageP M1, const imageP M2, int nframes, const char *basename) 

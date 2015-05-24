@@ -10,8 +10,9 @@
 #ifndef MORPH_H
 #define MORPH_H
 
-#include <cv.h>
-#include <highgui.h>
+#include "opencv/cv.h"
+#include "opencv/highgui.h"
+
 using namespace cv;
 
 /** 

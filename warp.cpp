@@ -8,7 +8,8 @@
  */
 #include "meshwarp.h"
 #include <iostream>
-
+#include <stdlib.h>
+#include <stdio.h>
 using namespace std;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -17,7 +18,7 @@ using namespace std;
  * Main function to collect input image, source, and target meshes. 
  * Pass them to meshWarp() and save result in output file. 
  */ 
-void main(int argc, char **argv) 
+int main(int argc, char **argv) 
 { 
   imageP I1, I2; 
   imageP M1, M2;
@@ -41,5 +42,6 @@ void main(int argc, char **argv)
 
   /* save output to a file */ 
   saveImage(I2, argv[4], BW); 
+  return 0;
 } 
  

@@ -8,6 +8,8 @@
 /********************************************************************/ 
 
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -59,7 +61,7 @@ static long getlong(FILE *inf)
 
 
 
-void main(int argc, char **argv) 
+int main(int argc, char **argv) 
 { 
 	FILE *of, *inf; 
 	// char iname[80]; 
@@ -197,4 +199,5 @@ void main(int argc, char **argv)
 	}
 
 	fclose(of); 
+    return 0;
 }
